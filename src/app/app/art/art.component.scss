@@ -1,0 +1,55 @@
+.phoneClass {
+	display: none;
+}
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-wrapper img {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    vertical-align: middle;
+    width: 30em;
+}
+
+.screenClass {
+	background-color: dark-grey;
+}
+.img-wrapper img:hover {
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+    transform:scale(1.5);
+}
+.cntr {
+	text-align: center;
+}
+
+.movies1, .music1, .people1, .sports1 {
+	border: 5px solid #757575;
+}
+@media only screen and (max-width: 500px) {
+    .img-wrapper {
+    	display: none;
+	}
+	.screenClass {
+		display: none;
+	}
+	.phoneClass {
+		display: block;
+		padding: 1em;		
+	}
+	.phoneClass > .btn{
+		border-radius: 5px;
+	}
+	
+	.phoneClass > .btn:hover {
+		opacity: 0.3;
+	}
+}

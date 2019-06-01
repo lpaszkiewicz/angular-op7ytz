@@ -1,0 +1,17 @@
+
+.logo {
+	border: 1px solid grey;
+	background-color: white;
+	top: 1em;
+	left: 1em;
+}
+
+.navbar-expand-md .navbar-collapse {
+	padding-left: 10em;
+}
+
+@media only screen and (max-width: 500px) {
+	.logo {
+		display: none;
+	}
+}
